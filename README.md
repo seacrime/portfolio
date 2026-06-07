@@ -13,10 +13,8 @@
 
 ## 🛠️ Используемые технологии
 
-- HTML5
-- CSS3
-- JavaScript (нативный)
-- Font Awesome 6
-- Google Fonts (Inter)
+- HTML
+- CSS
+- JavaScript 
 
-## 📁 Структура проекта
+
