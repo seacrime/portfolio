@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title> Портфолио</title>
+    <meta name="description" content="Портфолио Шилкина Андрея">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter modern sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%233b82f6'/%3E%3Ctext x='50' y='68' font-size='70' text-anchor='middle' fill='white' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body class="light-mode">
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">A.Shilkin</a>
+            <nav class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="#about">О себе</a>
+                <a href="#skills">Навыки</a>
+                <a href="#education">Образование</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="header-controls">
+                <!-- Language Toggle -->
+                <button class="icon-btn" id="langToggle" aria-label="Switch language">
+                    <i class="fas fa-globe"></i> <span id="langLabel">EN</span>
+                </button>
+                <!-- Theme Toggle -->
+                <button class="icon-btn" id="themeToggle" aria-label="Switch theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- GitHub link (mandatory) -->
+                <a href="https://github.com/sykqwer" target="_blank" class="icon-btn github-header" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home">Главная</a>
+            <a href="#about">О себе</a>
+            <a href="#skills">Навыки</a>
+            <a href="#education">Образование</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contact">Контакты</a>
+            <hr>
+            <a href="https://github.com/sykqwer" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Home section -->
+        <section id="home" class="section hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge" data-en="Hello, I'm" data-ru="Привет, я">Привет, я</span>
+                    <h1 class="hero-title">Шилкин Андрей</h1>
+                    <p class="hero-subtitle" data-en="beginner" data-ru="Новичок">Новичок</p>
+                    <p class="hero-desc" data-en="I love to create something." data-ru="Люблю создавать чтото.">Люблю создавать чтото.</p>
+                    <div class="hero-buttons">
+                        <button id="downloadPdfBtn" class="btn btn-primary"><i class="fas fa-file-pdf"></i> <span data-en="Download CV" data-ru="Скачать резюме">Скачать резюме</span></button>
+                        <a href="#contact" class="btn btn-outline"><span data-en="Contact me" data-ru="Связаться">Связаться</span></a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-circle">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="About me" data-ru="О себе">О себе</h2>
+                <div class="about-card">
+                    <p data-en="I'm Andrey Shilkin, an ordinary student. I love playing games and used to do programming." data-ru="Я Шилкин Андрей,обычный студент, люблю играть в игры, раньше занимался программированием. ">Я Шилкин Андрей,обычный студент, люблю играть в игры, раньше занимался программированием.</p>
+                    <p class="about-detail" data-en="" data-ru=""></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title" data-en="Tech Skills" data-ru="Навыки">Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5"></i> HTML <span></span><div><div ></div></div></div>
+                    <div class="skill-card"><i class="fab fa-c"></i> С++ <span></span><div><div></div></div></div>
+                    <div class="skill-card"><i class="fab fa-c"></i> С# <span></span><div><div></div></div></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="Education " data-ru="Образование ">Образование </h2>
+                <div class="edu-list">
+                    <div class="edu-item"><i class="fas fa-graduation-cap"></i><div><h3 data-en="Gymnasium" data-ru="Гимназия">Гимназия</h3><p data-en="Average" data-ru="Среднее">Среднее</p></div></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title" data-en="Featured Projects" data-ru="Проекты">Проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card"><i class="fas fa-book"></i><h3>Word_selection</h3><p data-en="A game in which you will learn the Evenki language" data-ru=" Игра в которой вы научитесь эвенкийскому языку.">Игра в которой вы научитесь эвенкийскому язык.</p><a href="https://github.com/sykqwer/Word-selection/tree/main" class="project-link">GitHub →</a></div>
+                    <div class="project-card"><i class="fas fa-laptop-code "></i><h3>site</h3><p data-en="This site is created to showcase Tourism in the Anabar region." data-ru="Этот Сайт создан для демонстрации Туризма в Анабарском районе.">Этот Сайт создан для демонстрации Туризма в Анабарском районе</p><a href="https://github.com/sykqwer/site" class="project-link">GitHub →</a></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Feedback Form -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="Contact & Feedback" data-ru="Форма обратной связи">Форма обратной связи</h2>
+                <div class="contact-wrapper">
+                    <form id="feedbackForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-en="Full name *" data-ru="Имя *">Имя *</label>
+                            <input type="text" id="name" name="name" placeholder="Шилкин Андрей" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone * (e.g. +7 999 123-45-67)" data-ru="Телефон * (например +7 999 123-45-67)">Телефон * (например +7 999 123-45-67)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 999 123-45-67" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email *" data-ru="Email *">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="12345@gmail.com" required>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Your question / message *" data-ru="Ваш вопрос/сообщение *">Ваш вопрос/сообщение *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="..." ></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="formSubmitBtn"><span data-en="Send message" data-ru="Отправить">Отправить</span> <i class="fas fa-paper-plane"></i></button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                    <div class="contact-info">
+                        <h3 data-en="Other ways to reach me" data-ru="Другие контакты">Другие контакты</h3>
+                        <p><i class="fas fa-envelope"></i>andryandarflow2@gmail.com</p>
+                        <p><i class="fab fa-telegram"></i> @sykamode</p>
+                        <p><i class="fab fa-github"></i> github.com/sykqwer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Andrey Shilkin</p>
+            <div class="footer-links">
+                <a href="https://github.com/sykqwer" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS modules -->
+    <script src="js/theme.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
