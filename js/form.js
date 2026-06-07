@@ -1,4 +1,3 @@
-// js/form.js
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('feedbackForm');
     const nameInput = document.getElementById('name');
@@ -54,23 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
             date: new Date().toISOString()
         };
         formStatus.innerText = currentLang === 'ru' ? 'Отправка...' : 'Sending...';
-        // Mock successful send (you can replace with Google Sheets script)
+        
         setTimeout(() => {
             formStatus.innerHTML = `<span style="color: #10b981">✓ ${currentLang === 'ru' ? 'Сообщение отправлено (демо)' : 'Message sent (demo)'}</span>`;
             form.reset();
             setTimeout(() => formStatus.innerHTML = '', 3000);
         }, 800);
-
-        // Example Google Sheets fetch (optional - uncomment with your script URL)
-        /*
-        try {
-            await fetch('https://script.google.com/macros/s/YOUR_ID/exec', {
-                method: 'POST',
-                mode: 'no-cors',
-                body: JSON.stringify(formData)
-            });
-        } catch(err) { console.warn(err); }
-        */
     });
     let currentLang = localStorage.getItem('lang') || 'en';
 });
