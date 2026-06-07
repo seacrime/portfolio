@@ -1,4 +1,3 @@
-// js/lang.js
 (function() {
     const elements = document.querySelectorAll('[data-en][data-ru]');
     let currentLang = localStorage.getItem('lang') || (navigator.language.startsWith('ru') ? 'ru' : 'en');
@@ -16,7 +15,7 @@
                 }
             }
         });
-        // update button label
+    
         if (langSpan) langSpan.innerText = lang.toUpperCase();
         localStorage.setItem('lang', lang);
         currentLang = lang;
