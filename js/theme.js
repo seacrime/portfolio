@@ -1,4 +1,3 @@
-// js/theme.js - ИСПРАВЛЕННАЯ ВЕРСИЯ
 (function() {
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
@@ -29,18 +28,18 @@
         if (stored === 'dark' || stored === 'light') {
             return stored;
         }
-        // Проверяем системные настройки
+      
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             return 'dark';
         }
         return 'light';
     }
 
-    // Применяем тему при загрузке
+   
     const initialTheme = getPreferredTheme();
     setTheme(initialTheme);
 
-    // Обработчик кнопки переключения
+    
     if (themeToggle) {
         themeToggle.addEventListener('click', (e) => {
             e.preventDefault();
@@ -49,7 +48,7 @@
         });
     }
 
-    // Слушаем изменение системной темы (если пользователь не выбрал вручную)
+    
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
             setTheme(e.matches ? 'dark' : 'light');
